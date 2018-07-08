@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>mike</title>
+<!--
+    <link href="mike/public/static/admin/assets/css/mikestyle.css" rel='stylesheet' type='text/css'/>
+-->
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/ing.css">-->
+
+    <link rel="stylesheet" href="__CSS__/mikestyle.css"/>
+</head>
+<body>
+
+
+<script>$(document).ready(function (c) {
+    $('.close').on('click', function (c) {
+        $('.login-form').fadeOut('slow', function (c) {
+            $('.login-form').remove();
+        });
+    });
+});
+</script>
+<h1 class="myapp-login-logo-text">米客.后台管理</h1>
+<div class="login-form">
+    <!--<div class="close"></div>-->
+    <div class="head-info">
+        <!--<label class="lbl-1"> </label>
+        <label class="lbl-2"> </label>S
+        <label class="lbl-3"> </label>-->
+    </div>
+    <div class="clear"></div>
+    <div class="avtar">
+        <img src="__IMG__/avtar.png"/>
+    </div>
+    <form action="{:url('singin')}" METHOD="post">
+
+        <div class="key">
+            <input type="text" class="text" id="doc-ipt-email-1" name="name">
+        </div>
+
+        <div class="key">
+            <input type="password" class="" id="doc-ipt-pwd-1" name="password">
+        </div>
+
+        <div class="signin">
+            <input type="submit" value="登录">
+        </div>
+    </form>
+
+</div>
+
+
+</body>
+</html>
